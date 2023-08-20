@@ -1,0 +1,1 @@
+INSERT INTO "users" ("full_name", "phone") VALUES ('John Doe', '123-456-7890');

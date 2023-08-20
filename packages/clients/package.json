@@ -1,0 +1,35 @@
+{
+  "name": "@boilerplate/clients",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "exports": {
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "default": "./dist/*/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "dev": "dotenv -e .env.development -- tsc -w",
+    "build": "dotenv -e .env.local -- tsc",
+    "db:generate": "npx drizzle-kit generate:pg --config=./src/db/drizzle.config.ts",
+    "build-prod": ""
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "dotenv-cli": "^7.2.1",
+    "drizzle-kit": "^0.19.12",
+    "@boilerplate/tsconfig": "*"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.28.2",
+    "postgres": "^3.3.5"
+  }
+}

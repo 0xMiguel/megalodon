@@ -1,0 +1,15 @@
+{
+  "name": "@boilerplate/types",
+  "version": "0.0.0",
+  "description": "types for the monorepo",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
+    "types:generate": "cd ../../supabase && supabase gen types typescript --local > ../packages/types/database.ts"
+  },
+  "devDependencies": {
+    "@boilerplate/tsconfig": "*"
+  }
+}

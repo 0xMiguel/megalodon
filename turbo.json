@@ -9,7 +9,14 @@
     "lint": {},
     "dev": {
       "cache": false,
-      "persistent": true
+      "dependsOn": ["^types:generate"]
+    },
+    "types:generate": {
+      "cache": false
     }
-  }
+  },
+  "globalEnv": [
+    "NODE_ENV",
+    "DATABASE_URL"
+  ]
 }

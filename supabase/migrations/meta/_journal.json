@@ -1,0 +1,27 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1692319675465,
+      "tag": "0000_jittery_outlaw_kid",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1692371400987,
+      "tag": "0001_tricky_mandarin",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1692372132111,
+      "tag": "0002_puzzling_vector",
+      "breakpoints": true
+    }
+  ]
+}

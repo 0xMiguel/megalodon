@@ -1,0 +1,7 @@
+{
+  "extends": "@boilerplate/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+  },
+  "exclude": ["node_modules", "dist"]
+}
