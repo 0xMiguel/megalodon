@@ -22,11 +22,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 exports.__esModule = true;
-exports.helloWorld = exports.db = void 0;
+exports.db = void 0;
 var process = __importStar(require("process"));
 var dotenv_1 = require("dotenv");
 var path_1 = require("path");
@@ -37,9 +40,4 @@ var envPath = (0, path_1.resolve)(__dirname, process.env.NODE_ENV === 'developme
 var connectionString = process.env.DATABASE_URL;
 var client = (0, postgres_1["default"])(connectionString);
 exports.db = (0, postgres_js_1.drizzle)(client);
-var helloWorld = function () {
-    return [
-        "@boilerplate/clients env: ".concat(process.env.NODE_ENV, ", ").concat(connectionString)
-    ];
-};
-exports.helloWorld = helloWorld;
+__exportStar(require("./schema"), exports);

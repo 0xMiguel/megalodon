@@ -5,11 +5,15 @@
   "main": "./dist/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx watch --no-cache src/index.ts",
+    "dev": "NODE_ENV=development tsx watch --no-cache src/index.ts",
     "build:api:dev": "tsc --build"
+  },
+  "dependencies": {
+    "@boilerplate/clients": "*"
   },
   "devDependencies": {
     "tsx": "^3.12.7",
-    "@boilerplate/tsconfig": "*"
+    "@boilerplate/tsconfig": "*",
+    "@boilerplate/types": "*"
   }
 }

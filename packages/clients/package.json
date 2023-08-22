@@ -23,13 +23,15 @@
     "build-prod": ""
   },
   "devDependencies": {
+    "@boilerplate/tsconfig": "*",
     "@types/node": "^20.5.0",
     "dotenv-cli": "^7.2.1",
-    "drizzle-kit": "^0.19.12",
-    "@boilerplate/tsconfig": "*"
+    "drizzle-kit": "^0.19.12"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.32.0",
     "drizzle-orm": "^0.28.2",
-    "postgres": "^3.3.5"
+    "postgres": "^3.3.5",
+    "@boilerplate/types": "*"
   }
 }
